@@ -1,0 +1,161 @@
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        Engenharia Informática
+    </title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+            <nav class="menu">
+            <ul>
+                <li class="active"><a href="index.html">Início</a></li>
+                <li><a id="myBtn" href="#">Multiplicação</a></li>
+                <li><a href="grupo.html">Grupo</a></li>
+                <li><a class="myClass" href="#" >Mudar Fundo</a></li>
+                <li><a href="https://www.ufp.pt/">UFP</a></li>
+                <li><a href="Uppercase.html">UpperCase</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+         
+        <div id="myModal" class="modal">
+  
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <br></br>
+
+<h1 id="resposta"></h1>
+<br></br>
+<h3 class="multiplicacao2">Número 1: <input type="text" id="num1"></h3>
+<br></br>
+<h3 class="multiplicacao2">Número 2: <input type="text" id="num2"></h3>
+<br></br>
+<button class="multiplicacao3", onclick="calculate() ">Calculo</button>
+    
+  </div>
+
+</div>
+
+
+
+
+
+
+<div class="title">
+    <h1 class="title">
+        Engenharia Informática
+    </h1>            
+</div>
+
+
+
+
+
+
+
+<script>
+    var background = document.querySelector("body");
+    var text = document.querySelector("title")
+    var colorButton = document.querySelector(".myClass");
+    colorButton.addEventListener("click", colorChange);
+
+    function colorChange() {
+        
+      var colorSet = [{
+          background: "url(1.jpg)",
+          text: "#cc313d"
+        },
+        {
+          background: "url(3.jpg)",
+          text: "#fff"
+        },
+        {
+          background: "url(4.jpg)",
+          text: "#000"
+        },
+        {
+          background: "url(5.png)",
+          text: "#fbf8be"
+        },
+        {
+          background: "url(6.jpg)",
+          text: "#ee4e34"
+        },
+      ];
+
+      var random = Math.floor(Math.random() * colorSet.length);
+    
+      background.style.backgroundImage = colorSet[random].background;
+      text.style.color = colorSet[random].text;
+      text.style.color.setProperty('--blue', 'lightblue');
+    }</script>
+
+
+
+
+
+
+
+
+
+
+</script>
+<script>
+    function calculate(){
+    var field1=document.getElementById("num1").value;
+    var field2=document.getElementById("num2").value;
+    var result=parseFloat(field1)*parseFloat(field2);
+
+
+    alert("A resposta e: "+result);
+}
+
+</script>
+<script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks the button, open the modal 
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+        
+    </header>
+
+    
+</body>
+
+
+
+
+</html>
