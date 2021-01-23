@@ -86,10 +86,6 @@ html {
     box-sizing: border-box;
 }
 
-html {
-    box-sizing: border-box;
-}
-
 *, *:before, *:after {
     box-sizing: inherit;
   }
@@ -269,6 +265,7 @@ margin-right: 50%;
     color: #000;
 }
 
+
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -283,7 +280,7 @@ margin-right: 50%;
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
   
-  
+  /* Modal Content */
   .modal-content {
     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../1.jpg);
     margin: auto;
@@ -292,7 +289,7 @@ margin-right: 50%;
     width: 80%;
   }
   
- 
+  /* The Close Button */
   .close {
     color: #aaaaaa;
     float: right;
@@ -306,4 +303,5 @@ margin-right: 50%;
     text-decoration: none;
     cursor: pointer;
   }
+
 
