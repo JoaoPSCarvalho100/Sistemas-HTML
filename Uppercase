@@ -1,0 +1,84 @@
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        Engenharia Informática
+    </title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+            <nav class="menu">
+            <ul>
+                <li class="active"><a href="index.html">Início</a></li>
+                <li><a href="grupo.html">Grupo</a></li>
+                <li><a class="myClass" href="#" >Mudar Fundo</a></li>
+                <li><a href="https://www.ufp.pt/">UFP</a></li>
+                <li><a href="Uppercase.html">UpperCase</a></li>
+            </ul>
+        </nav>
+    </div>
+<br></br><br></br><br></br><br></br>
+    <h1 class="button">Converter texto para Maiusculas</h1>
+<h3 class="button">UpperCase: <input type="text" id="Upper"></h3>
+<button class="multiplicacao3"onclick="UpperCase()">Converter</button>
+
+<p id="demo"></p>
+
+<script>
+function UpperCase() {
+var field1=document.getElementById("Upper").value;
+  var res = field1.toUpperCase();
+
+  alert(res);
+}
+</script>
+</headar>
+
+</body>
+
+<script>
+    var background = document.querySelector("body");
+    var text = document.querySelector("title")
+    var colorButton = document.querySelector(".myClass");
+    colorButton.addEventListener("click", colorChange);
+
+    function colorChange() {
+        
+      var colorSet = [{
+          background: "url(1.jpg)",
+          text: "#cc313d"
+        },
+        {
+          background: "url(3.jpg)",
+          text: "#fff"
+        },
+        {
+          background: "url(4.jpg)",
+          text: "#000"
+        },
+        {
+          background: "url(5.png)",
+          text: "#fbf8be"
+        },
+        {
+          background: "url(6.jpg)",
+          text: "#ee4e34"
+        },
+      ];
+
+      var random = Math.floor(Math.random() * colorSet.length);
+    
+      background.style.backgroundImage = colorSet[random].background;
+      text.style.color = colorSet[random].text;
+      text.style.color.setProperty('--blue', 'lightblue');
+    }</script>
+</html>
+    
