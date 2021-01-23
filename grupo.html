@@ -1,0 +1,131 @@
+<html lang="en" data-theme="dark">
+
+<head>
+    <head>
+    <title>
+        Engenharia Informática
+    </title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+</head>
+
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+            <nav class="menu">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li class="active"><a href="grupo.html">Grupo</a></li>
+                <li><a class="myClass" href="#" >Mudar Fundo</a></li>
+                <li><a href="https://www.ufp.pt/">UFP</a></li>
+                <li><a href="Uppercase.html">UpperCase</a></li>
+            </ul>
+        </nav>
+        </div>
+            <h1 class="multiplicacao1">Grupo</h1>
+            <br></br><br></br>
+        </div>
+
+
+    
+        <section class="accordion">
+   
+            <section id="item1">
+                <br></br><br></br>
+                <h2 class="button2"><img src="2.png"width=100px></h2>
+                <h2 class="button"><p></p>Vasco Oliveira</h2>
+                <h4 class="button">Estudante na Universidade Fernando Pessoa</h4>
+                <h5 class="button">Curso Engenharia Informática</h5>
+                <a href="#item1"><h4>Saber Mais</h4></a>
+                <p>
+                Neste primeiro semestre, consegui manter as minhas expectativas sobre cada cadeira, por vezes superá-las. Tive altos e baixos, mas acredito que consegui me superar em cada adversidade que encontrei. Por fim penso que este foi um semestre em que aprendi bastante, e evolui muito não só como aluno mas como pessoa. De todas as disciplinas, destaco algoritmia
+                </p>
+                
+                            
+            </section>
+
+            <section id="item2">
+                
+                <br></br><br></br>
+                <h2 class="button2"><img src="2.png"width=100px></h2>
+                <h2 class="button">João Carvalho</h2>
+                <h4 class="button">Estudante na Universidade Fernando Pessoa</h4>
+                <h5 class="button">Curso Engenharia Informática</h5>
+                <a href="#item2"><h4>Saber Mais</h4></a>
+                <p> 
+
+                    Neste semestre, tive fases boas e fases menos boas porém foi um semestre bastante positivo, o curso é exatamente o que esperava e estou a gostar bastante. Para o segundo semestre espero manter a concentração e o ritmo de estudo que tenho tido para terminar o ano de forma positiva. A cadeira que gostei mais até ao momento é Matemática I.
+                </p>
+
+                            
+            </section>
+
+            <section id="item3">
+                <br></br><br></br>
+                <h2 class="button2"><img src="2.png"width=100px></h2>
+                <h2 class="button">Tomás Monteiro</h2>
+                <h4 class="button">Estudante na Universidade Fernando Pessoa</h4>
+                <h5 class="button">Curso Engenharia Informática</h5>
+                <a href="#item3"><h4>Saber Mais</h4></a>
+
+                <p>
+                    Para mim e apesar do ano atípico em que vivemos, o meu primeiro semestre universitário foi bastante bom, conseguindo alcançar quase todos os objetivos enquanto aluno universitário. A disciplina que apesar da mais trabalhosa e complicada, mais chamou a minha atenção, foi IAPG (Introdução Algoritmia e Programação), visto ser uma nova disciplina , a principal e aquela que me fez tanto gostar deste curso. Em suma, o primeiro semestre correu bastante bem e espero que assim continue no segundo semestre e nos anos subconsequentes do curso de Engenharia Informática
+                </p>
+             
+                
+                    
+                    
+                          
+            </section>
+            
+        
+        </main>
+                   
+                  
+    </nav>
+       
+    </header>
+</body>
+
+<script>
+    var background = document.querySelector("body");
+    var text = document.querySelector("title")
+    var colorButton = document.querySelector(".myClass");
+    colorButton.addEventListener("click", colorChange);
+
+    function colorChange() {
+        
+      var colorSet = [{
+          background: "url(1.jpg)",
+          text: "#cc313d"
+        },
+        {
+          background: "url(3.jpg)",
+          text: "#fff"
+        },
+        {
+          background: "url(4.jpg)",
+          text: "#000"
+        },
+        {
+          background: "url(5.png)",
+          text: "#fbf8be"
+        },
+        {
+          background: "url(6.jpg)",
+          text: "#ee4e34"
+        },
+      ];
+
+      var random = Math.floor(Math.random() * colorSet.length);
+    
+      background.style.backgroundImage = colorSet[random].background;
+      text.style.color = colorSet[random].text;
+
+    }</script>
+
+
+</html>
