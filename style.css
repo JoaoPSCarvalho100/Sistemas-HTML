@@ -282,7 +282,7 @@ margin-right: 50%;
   
   /* Modal Content */
   .modal-content {
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../1.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
